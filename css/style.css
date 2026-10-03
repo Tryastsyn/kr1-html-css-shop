@@ -502,3 +502,67 @@ a:focus-visible {
 [aria-invalid="true"] {
   border-color: var(--color-danger);
 }
+/* ===============================
+   6. Боковое меню, которое едет за экраном
+   =============================== */
+body {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: start;
+}
+
+header {
+  grid-column: 1;
+  grid-row: 1 / span 2;   /* занимает высоту main + footer */
+  position: sticky;
+  top: 0;                 /* прилипает к верху окна при прокрутке */
+  align-self: start;
+  min-height: 100vh;
+  border-right: 1px solid var(--color-border);
+}
+
+main   { grid-column: 2; grid-row: 1; }
+footer { grid-column: 2; grid-row: 2; }
+.success-message { grid-column: 2; }
+
+.site-header {
+  max-width: none;
+  margin: 0;
+}
+
+/* ===============================
+   7. Горизонтальные карточки товаров
+   =============================== */
+#popular {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+}
+
+#popular h2 {
+  grid-column: 1 / -1;    /* заголовок на всю ширину */
+}
+
+.product-card {
+  margin-bottom: 0;       /* отступ теперь задаёт gap */
+}
+
+.product-card__image {
+  width: 100%;
+  height: 200px;
+}
+
+/* ===============================
+   8. Адаптив: на узких экранах меню сверху
+   =============================== */
+@media (max-width: 800px) {
+  body {
+    display: block;
+  }
+
+  header {
+    position: static;
+    min-height: 0;
+    border-right: none;
+  }
+}
