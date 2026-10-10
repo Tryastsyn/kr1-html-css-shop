@@ -9,21 +9,13 @@
 }
 
 .product-card__image {
-    width: 200px;        /* ширина */
-    height: 200px;       /* высота */
-    object-fit: cover;   /* чтобы не искажалось */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
-/*
-  Убираем стандартный внешний отступ браузера у body.
-  Без этого вокруг страницы может появиться белая рамка.
-*/
-
-
-
 
 /*
   Задаём внутренние отступы для основных областей страницы.
-  Это делает содержимое визуально отделённым от краёв окна браузера.
 */
 
 header,
@@ -32,38 +24,34 @@ footer {
   padding: var(--space-lg);
 }
 
-
-
 /*
   Оформляем шапку страницы.
-  Пока используется простой светло-серый фон.
+  position: sticky — меню «едет» за прокруткой, прилипая к верху окна.
 */
 
 header {
     background-color: var(--color-surface);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-
 /*
-  Оформляем подвал страницы тем же фоном,
-  чтобы визуально отделить его от основного содержимого.
+  Оформляем подвал страницы тем же фоном.
 */
 
 footer {
     background-color: var(--color-surface);
 }
 
-
 /*
-  Ограничиваем ширину содержимого шапки,
-  чтобы оно не растягивалось слишком сильно на широких экранах.
+  Ограничиваем ширину содержимого шапки.
 */
 
 .site-header {
     max-width: 1100px;
     margin: 0 auto;
 }
-
 
 /*
   Оформляем текстовый логотип.
@@ -75,50 +63,35 @@ footer {
     color: #222222;
 }
 
-
 /*
   Убираем стандартные отступы и маркеры списка навигации.
+  Пункты меню выстраиваем в линию по горизонтали.
 */
 
 .site-nav__list {
     padding: 0;
     margin: 16px 0 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
-
-
-/*
-  Добавляем расстояние между пунктами меню.
-*/
 
 .site-nav__list li {
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
-
-
-/*
-  Оформляем ссылки меню.
-*/
 
 .site-nav__list a {
     color: #0057b8;
     text-decoration: none;
 }
 
-
-/*
-  При наведении мыши подчёркиваем ссылку.
-  Подробно состояния интерфейса будут рассмотрены в практической работе 1.7.
-*/
-
 .site-nav__list a:hover {
     text-decoration: underline;
 }
 
-
 /*
   Hero-блок — первый крупный блок страницы.
-  Он визуально отделяется от остальных разделов фоном и отступами.
 */
 
 .hero {
@@ -129,7 +102,6 @@ footer {
     border-radius: 12px;
 }
 
-
 /*
   Общий класс для разделов страницы.
 */
@@ -139,34 +111,21 @@ footer {
     margin: 0 auto 32px;
 }
 
-
-/*
-  Убираем лишний верхний отступ у заголовков разделов.
-*/
-
 .section h2 {
     margin-top: 0;
 }
 
-
 /*
   Карточка товара — самостоятельный блок.
-  На следующих занятиях карточки будут доработаны и выстроены в сетку.
 */
 
 .product-card {
     margin-bottom: var(--space-md);
-  padding: var(--space-md);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background-color: var(--color-bg);
-
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-bg);
 }
-
-
-/*
-  Убираем лишний верхний отступ у заголовка карточки.
-*/
 
 .product-card:hover {
   border-color: var(--color-primary);
@@ -176,10 +135,8 @@ footer {
   margin-top: 0;
 }
 
-
-
 /*
-  Пока это обычная ссылка, но визуально она оформляется как кнопка.
+  Кнопка.
 */
 
 .button {
@@ -207,34 +164,20 @@ footer {
   cursor: not-allowed;
 }
 
-
-
-/*
-  Простое состояние наведения для кнопки.
-*/
-
-.button:hover {
-    background-color: #003f86;
-}
-
-
 /*
   Дополнительный информационный блок.
 */
 
 .aside-info {
     max-width: var(--container-width);
-  margin: 0 auto var(--space-xl);
-  padding: var(--space-md);
-  border-left: 4px solid var(--color-primary);
-  background-color: var(--color-surface);
-
+    margin: 0 auto var(--space-xl);
+    padding: var(--space-md);
+    border-left: 4px solid var(--color-primary);
+    background-color: var(--color-surface);
 }
-
 
 /*
   Модальное окно.
-  Элемент dialog сам умеет открываться поверх страницы.
 */
 
 .order-dialog {
@@ -244,39 +187,22 @@ footer {
     border-radius: 12px;
 }
 
-
-/*
-  Затемнение фона за модальным окном.
-*/
-
 .order-dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 /*
-  Поле формы.
-  Каждый блок получает нижний отступ.
+  Поля формы.
 */
 
 .form-field {
     margin-bottom: 16px;
 }
 
-
-/*
-  Подпись поля.
-*/
-
 .form-field label {
     display: block;
     margin-bottom: 6px;
 }
-
-
-/*
-  Основные поля формы.
-*/
 
 .form-field input,
 .form-field select,
@@ -288,30 +214,15 @@ footer {
     font: inherit;
 }
 
-
-/*
-  Checkbox не должен занимать всю ширину.
-*/
-
 .form-field input[type="checkbox"] {
     width: auto;
 }
-
-
-/*
-  Подсказка под полем телефона.
-*/
 
 .form-field small {
     display: block;
     margin-top: 4px;
     color: #666666;
 }
-
-
-/*
-  Видимый фокус для клавиатурной навигации.
-*/
 
 .form-field input:focus-visible,
 .form-field select:focus-visible,
@@ -321,20 +232,9 @@ footer {
     outline-offset: 2px;
 }
 
-
-/*
-  Подсветка ошибочных полей.
-  Атрибут aria-invalid будет добавляться через JavaScript.
-*/
-
 [aria-invalid="true"] {
     border-color: #b00020;
 }
-
-
-/*
-  Кнопки формы.
-*/
 
 .form-actions {
     display: flex;
@@ -342,26 +242,18 @@ footer {
     margin-top: 20px;
 }
 
-
-/*
-  Сообщение об успешной отправке.
-*/
-
 .success-message {
     max-width: var(--container-width);
-  margin: var(--space-lg) auto;
-  padding: var(--space-md);
-  border-left: 4px solid var(--color-success);
-  background-color: var(--color-success-bg);
-
+    margin: var(--space-lg) auto;
+    padding: var(--space-md);
+    border-left: 4px solid var(--color-success);
+    background-color: var(--color-success-bg);
 }
-
 
 /* ===============================
    1. Переменные проекта
    =============================== */
 :root {
-  /* Основные цвета проекта */
   --color-bg: #ffffff;
   --color-text: #222222;
   --color-muted: #666666;
@@ -375,19 +267,16 @@ footer {
   --color-success-bg: #eefaf0;
   --color-white: #ffffff;
 
-  /* Отступы */
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 16px;
   --space-lg: 24px;
   --space-xl: 32px;
 
-  /* Скругления */
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
 
-  /* Размеры */
   --container-width: 1100px;
 }
 
@@ -405,7 +294,6 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
 }
-
 
 /* ===============================
    3. Общие элементы интерфейса
@@ -485,6 +373,7 @@ a:focus-visible {
   margin-top: var(--space-xs);
   color: var(--color-muted);
 }
+
 .form-field input:hover,
 .form-field select:hover,
 .form-field textarea:hover {
@@ -502,36 +391,9 @@ a:focus-visible {
 [aria-invalid="true"] {
   border-color: var(--color-danger);
 }
-/* ===============================
-   6. Боковое меню, которое едет за экраном
-   =============================== */
-body {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  align-items: start;
-}
-
-header {
-  grid-column: 1;
-  grid-row: 1 / span 2;   /* занимает высоту main + footer */
-  position: sticky;
-  top: 0;                 /* прилипает к верху окна при прокрутке */
-  align-self: start;
-  min-height: 100vh;
-  border-right: 1px solid var(--color-border);
-}
-
-main   { grid-column: 2; grid-row: 1; }
-footer { grid-column: 2; grid-row: 2; }
-.success-message { grid-column: 2; }
-
-.site-header {
-  max-width: none;
-  margin: 0;
-}
 
 /* ===============================
-   7. Горизонтальные карточки товаров
+   6. Горизонтальные карточки товаров
    =============================== */
 #popular {
   display: grid;
@@ -540,11 +402,11 @@ footer { grid-column: 2; grid-row: 2; }
 }
 
 #popular h2 {
-  grid-column: 1 / -1;    /* заголовок на всю ширину */
+  grid-column: 1 / -1;
 }
 
 .product-card {
-  margin-bottom: 0;       /* отступ теперь задаёт gap */
+  margin-bottom: 0;
 }
 
 .product-card__image {
@@ -553,20 +415,17 @@ footer { grid-column: 2; grid-row: 2; }
 }
 
 /* ===============================
-   8. Адаптив: на узких экранах меню сверху
+   7. Адаптив: на узких экранах карточки в одну колонку
    =============================== */
 @media (max-width: 800px) {
-  body {
-    display: block;
-  }
-
-  header {
-    position: static;
-    min-height: 0;
-    border-right: none;
+  #popular {
+    grid-template-columns: 1fr;
   }
 }
 
+/* ===============================
+   8. Хлебные крошки
+   =============================== */
 .breadcrumbs {
   max-width: var(--container-width);
   margin: 0 auto var(--space-md);
@@ -582,9 +441,14 @@ footer { grid-column: 2; grid-row: 2; }
   content: " / ";
   color: var(--color-muted);
 }
+
+/* ===============================
+   9. Плавная прокрутка и подсветка цели
+   =============================== */
 html {
   scroll-behavior: smooth;
 }
+
 :target {
   outline: 2px dashed var(--color-primary);
   outline-offset: 4px;
