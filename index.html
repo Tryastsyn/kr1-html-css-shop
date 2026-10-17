@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body id="top">
     <header class="site-header">
   <div class="site-header__inner">
     <a class="site-header__logo" href="index.html">ShopProject</a>
@@ -22,12 +22,21 @@
     <nav class="site-nav" aria-label="Основная навигация">
       <ul class="site-nav__list">
         <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link--active" href="index.html">
+          <a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">
             Главная
           </a>
         </li>
         <li class="site-nav__item">
           <a class="site-nav__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="sales.html">Акции</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="delivery.html">Доставка и оплата</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="about.html">О компании</a>
         </li>
         <li class="site-nav__item">
           <a class="site-nav__link" href="contacts.html">Контакты</a>
@@ -109,8 +118,211 @@
                         Заказать
                     </button>
                 </article>
+
+                <article class="product-card">
+                    <img
+                        class="product-card__image product-card__image--contain"
+                        src="https://fifinemicrophone.com/cdn/shop/files/FIFINE-K669B-usb-microphone.png?v=1770881705&width=600"
+                        alt="Микрофон FIFINE K669B"
+                        loading="lazy"
+                    >
+                    <h3 class="product-card__title">Товар 4</h3>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">Цена: 2500 руб.</p>
+                    <button class="button button--primary product-card__button" type="button" data-product="Товар 4">
+                        Заказать
+                    </button>
+                </article>
+
+                <article class="product-card product-card--discount">
+                    <img
+                        class="product-card__image product-card__image--contain"
+                        src="https://fifinemicrophone.com/cdn/shop/files/FIFINE-ampligame-AM8-dynamic-microphone-black-front.png?v=1771991442&width=600"
+                        alt="Микрофон FIFINE AmpliGame AM8"
+                        loading="lazy"
+                    >
+                    <h3 class="product-card__title">Товар 5</h3>
+                    <p class="product-card__badge">Скидка 15%</p>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">
+                        Цена: 2550 руб.
+                        <s class="product-card__old-price"><span class="visually-hidden">Старая цена:</span> 3000 руб.</s>
+                    </p>
+                    <button class="button button--primary product-card__button" type="button" data-product="Товар 5">
+                        Заказать
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        class="product-card__image product-card__image--contain"
+                        src="https://fifinemicrophone.com/cdn/shop/files/FIFINE-K688-dynamic-microphone-black.png?v=1765334442&width=600"
+                        alt="Микрофон FIFINE K688"
+                        loading="lazy"
+                    >
+                    <h3 class="product-card__title">Товар 6</h3>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">Цена: 3500 руб.</p>
+                    <button class="button button--primary product-card__button" type="button" data-product="Товар 6">
+                        Заказать
+                    </button>
+                </article>
+
+                <article class="product-card product-card--discount">
+                    <img
+                        class="product-card__image product-card__image--contain"
+                        src="https://fifinemicrophone.com/cdn/shop/files/FIFINE-A6V-microphone-black-left.png?v=1767063492&width=600"
+                        alt="Микрофон FIFINE AmpliGame A6V"
+                        loading="lazy"
+                    >
+                    <h3 class="product-card__title">Товар 7</h3>
+                    <p class="product-card__badge">Скидка 20%</p>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">
+                        Цена: 3200 руб.
+                        <s class="product-card__old-price"><span class="visually-hidden">Старая цена:</span> 4000 руб.</s>
+                    </p>
+                    <button class="button button--primary product-card__button" type="button" data-product="Товар 7">
+                        Заказать
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        class="product-card__image product-card__image--contain"
+                        src="https://fifinemicrophone.com/cdn/shop/files/FIFINE-A8-usb-microphone_3c3cf632-00f8-4d66-be4c-3a0051882434.png?v=1770955069&width=600"
+                        alt="Микрофон FIFINE AmpliGame A8"
+                        loading="lazy"
+                    >
+                    <h3 class="product-card__title">Товар 8</h3>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">Цена: 4500 руб.</p>
+                    <button class="button button--primary product-card__button" type="button" data-product="Товар 8">
+                        Заказать
+                    </button>
+                </article>
+
+                <article class="product-card product-card--discount">
+                    <img
+                        class="product-card__image product-card__image--contain"
+                        src="https://fifinemicrophone.com/cdn/shop/files/FIFINE-K690-microphone.png?v=1770882620&width=600"
+                        alt="Микрофон FIFINE K690"
+                        loading="lazy"
+                    >
+                    <h3 class="product-card__title">Товар 9</h3>
+                    <p class="product-card__badge">Скидка 10%</p>
+                    <p class="product-card__description">Краткое описание учебного товара.</p>
+                    <p class="product-card__price">
+                        Цена: 4500 руб.
+                        <s class="product-card__old-price"><span class="visually-hidden">Старая цена:</span> 5000 руб.</s>
+                    </p>
+                    <button class="button button--primary product-card__button" type="button" data-product="Товар 9">
+                        Заказать
+                    </button>
+                </article>
             </div>
         </section>
+
+        <!-- Блок часто задаваемых вопросов -->
+        <section class="section faq" aria-labelledby="faq-title">
+            <h2 class="faq__title" id="faq-title">Часто задаваемые вопросы</h2>
+
+            <div class="faq__list">
+                <details class="faq__item">
+                    <summary class="faq__question">Как оформить заказ?</summary>
+                    <div class="faq__answer">
+                        <p>Нажмите кнопку «Заказать» на карточке товара, заполните форму заявки и отправьте её. Менеджер свяжется с вами, чтобы подтвердить заказ.</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Сколько стоит доставка?</summary>
+                    <div class="faq__answer">
+                        <p>Курьером по Москве — 300 руб., при заказе от 3000 руб. — бесплатно. Все способы и сроки — на странице <a href="delivery.html">«Доставка и оплата»</a>.</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Как можно оплатить заказ?</summary>
+                    <div class="faq__answer">
+                        <p>Картой на сайте после подтверждения заявки, через СБП, а также наличными или картой при получении.</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Можно ли вернуть товар?</summary>
+                    <div class="faq__answer">
+                        <p>Да, в течение 14 дней после получения, если товар не был в использовании и сохранена упаковка.</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Где посмотреть скидки?</summary>
+                    <div class="faq__answer">
+                        <p>Актуальные предложения собраны на странице <a href="sales.html">«Акции»</a>.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Блок отзывов -->
+        <section class="section reviews" aria-labelledby="reviews-title">
+            <div class="reviews__header">
+                <h2 class="reviews__title" id="reviews-title">Отзывы покупателей</h2>
+                <p class="reviews__summary">Средняя оценка <strong>4,7</strong> из 5 по 3 отзывам</p>
+            </div>
+
+            <ul class="reviews__list" role="list">
+                <li>
+                    <figure class="review">
+                        <p class="review__rating">
+                            <span aria-hidden="true">★★★★★</span>
+                            <span class="visually-hidden">Оценка: 5 из 5</span>
+                        </p>
+                        <blockquote class="review__text">
+                            <p>Заказала «Товар 2» — привезли на следующий день, упаковка аккуратная. Менеджер заранее позвонил и уточнил удобное время.</p>
+                        </blockquote>
+                        <figcaption class="review__author">
+                            Анна К.
+                            <time class="review__date" datetime="2026-09-28">28 сентября 2026</time>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="review">
+                        <p class="review__rating">
+                            <span aria-hidden="true">★★★★<span class="review__star--empty">★</span></span>
+                            <span class="visually-hidden">Оценка: 4 из 5</span>
+                        </p>
+                        <blockquote class="review__text">
+                            <p>Хороший выбор и понятные цены. Одну звезду снял только за то, что в карточках мало фотографий.</p>
+                        </blockquote>
+                        <figcaption class="review__author">
+                            Игорь М.
+                            <time class="review__date" datetime="2026-10-03">3 октября 2026</time>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="review">
+                        <p class="review__rating">
+                            <span aria-hidden="true">★★★★★</span>
+                            <span class="visually-hidden">Оценка: 5 из 5</span>
+                        </p>
+                        <blockquote class="review__text">
+                            <p>Заявку оформила за минуту, ответ пришёл в тот же день. Заказываю здесь уже второй раз.</p>
+                        </blockquote>
+                        <figcaption class="review__author">
+                            Ольга С.
+                            <time class="review__date" datetime="2026-10-11">11 октября 2026</time>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
         <aside class="aside-info">
             <h2>Информация для студентов</h2>
             <p>
@@ -123,52 +335,94 @@
         <p>&copy; 2026 Учебный проект. Все права защищены.</p>
         <p>Дисциплина: Фронтенд и бэкенд разработка</p>
     </footer>
-    <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title" aria-describedby="order-dialog-text">
         <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+        <p class="order-dialog__text" id="order-dialog-text">
+            Заполните форму — менеджер свяжется с вами в течение рабочего дня.
+        </p>
 
         <form class="order-form" id="order-form" action="#" method="post" novalidate>
             <input id="selected-product" name="selected-product" type="hidden">
 
-            <div class="order-form__field">
-                <label class="order-form__label" for="order-name">Имя</label>
-                <input class="order-form__input" id="order-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
-            </div>
+            <p class="order-form__note">
+                Поля со звёздочкой <span class="order-form__required" aria-hidden="true">*</span> обязательны для заполнения.
+            </p>
 
-            <div class="order-form__field">
-                <label class="order-form__label" for="order-email">E-mail</label>
-                <input class="order-form__input" id="order-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
-            </div>
+            <fieldset class="order-form__group">
+                <legend class="order-form__legend">
+                    <span class="order-form__step" aria-hidden="true">1</span>
+                    Контактные данные
+                </legend>
 
-            <div class="order-form__field">
-                <label class="order-form__label" for="order-phone">Телефон</label>
-                <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
-                <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
-            </div>
+                <div class="order-form__grid">
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="order-name">
+                            Имя <span class="order-form__required" aria-hidden="true">*</span>
+                        </label>
+                        <input class="order-form__input" id="order-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" aria-describedby="order-name-hint" required>
+                        <small class="order-form__hint" id="order-name-hint">Не меньше 2 символов</small>
+                    </div>
 
-            <div class="order-form__field">
-                <label class="order-form__label" for="order-date">Дата связи</label>
-                <input class="order-form__input" id="order-date" name="date" type="date">
-            </div>
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="order-email">
+                            E-mail <span class="order-form__required" aria-hidden="true">*</span>
+                        </label>
+                        <input class="order-form__input" id="order-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" aria-describedby="order-email-hint" required>
+                        <small class="order-form__hint" id="order-email-hint">Сюда придёт подтверждение заявки</small>
+                    </div>
 
-            <div class="order-form__field">
-                <label class="order-form__label" for="order-topic">Тема заявки</label>
-                <select class="order-form__select" id="order-topic" name="topic" required>
-                    <option value="">Выберите тему</option>
-                    <option value="product">Заказ товара</option>
-                    <option value="consultation">Консультация</option>
-                    <option value="delivery">Доставка</option>
-                </select>
-            </div>
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="order-phone">
+                            Телефон <span class="order-form__required" aria-hidden="true">*</span>
+                        </label>
+                        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" autocomplete="tel" aria-describedby="order-phone-hint" required>
+                        <small class="order-form__hint" id="order-phone-hint">Формат: +7 (900) 000-00-00</small>
+                    </div>
 
-            <div class="order-form__field">
-                <label class="order-form__label" for="order-comment">Комментарий</label>
-                <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
-            </div>
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="order-date">
+                            Дата связи <span class="order-form__optional">(необязательно)</span>
+                        </label>
+                        <input class="order-form__input" id="order-date" name="date" type="date" aria-describedby="order-date-hint">
+                        <small class="order-form__hint" id="order-date-hint">Удобный день для звонка менеджера</small>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="order-form__group">
+                <legend class="order-form__legend">
+                    <span class="order-form__step" aria-hidden="true">2</span>
+                    Детали заявки
+                </legend>
+
+                <div class="order-form__grid">
+                    <div class="order-form__field order-form__field--wide">
+                        <label class="order-form__label" for="order-topic">
+                            Тема заявки <span class="order-form__required" aria-hidden="true">*</span>
+                        </label>
+                        <select class="order-form__select" id="order-topic" name="topic" aria-describedby="order-topic-hint" required>
+                            <option value="">Выберите тему</option>
+                            <option value="product">Заказ товара</option>
+                            <option value="consultation">Консультация</option>
+                            <option value="delivery">Доставка</option>
+                        </select>
+                        <small class="order-form__hint" id="order-topic-hint">Поможет сразу передать заявку нужному специалисту</small>
+                    </div>
+
+                    <div class="order-form__field order-form__field--wide">
+                        <label class="order-form__label" for="order-comment">
+                            Комментарий <span class="order-form__optional">(необязательно)</span>
+                        </label>
+                        <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4" maxlength="500" placeholder="Укажите дополнительную информацию" aria-describedby="order-comment-hint"></textarea>
+                        <small class="order-form__hint" id="order-comment-hint">До 500 символов</small>
+                    </div>
+                </div>
+            </fieldset>
 
             <div class="order-form__field order-form__field--checkbox">
-                <label class="order-form__label">
+                <label class="order-form__label order-form__label--checkbox">
                     <input class="order-form__checkbox" id="order-agreement" name="agreement" type="checkbox" required>
-                    Я согласен на обработку данных
+                    <span>Я согласен на обработку данных <span class="order-form__required" aria-hidden="true">*</span></span>
                 </label>
             </div>
 
@@ -186,6 +440,11 @@
     <p class="success-message" id="success-message" hidden>
         Форма успешно отправлена!
     </p>
+
+    <a class="to-top" href="#top">
+        <span class="to-top__icon" aria-hidden="true">↑</span>
+        <span class="to-top__text">Наверх</span>
+    </a>
 
 </body>
 

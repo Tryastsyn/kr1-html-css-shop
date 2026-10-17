@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Способы доставки и оплаты в учебном интернет-магазине.">
+  <title>Доставка и оплата — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Учебный интернет-магазин">
+  <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+  <meta property="og:image" content="https://username.github.io/kr1-html-css-shop/images/preview.jpg">
+</head>
+<body id="top">
+  <header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html">ShopProject</a>
+
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="sales.html">Акции</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link site-nav__link--active" href="delivery.html" aria-current="page">Доставка и оплата</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="about.html">О компании</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="contacts.html">Контакты</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="index.html#popular">
+            Популярные товары
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current" aria-current="page">Доставка и оплата</span>
+    </nav>
+
+    <section class="section">
+      <h1>Доставка и оплата</h1>
+      <p>
+        Доставляем заказы по Москве и всей России. Стоимость и сроки зависят
+        от выбранного способа доставки.
+      </p>
+    </section>
+
+    <section class="section" id="delivery">
+      <h2 id="delivery-title">Способы доставки</h2>
+
+      <!-- tabindex и role="region" — чтобы таблицу можно было прокрутить с клавиатуры на узком экране -->
+      <div class="table-wrap" role="region" aria-labelledby="delivery-title" tabindex="0">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">Способ</th>
+              <th scope="col">Срок</th>
+              <th scope="col">Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Курьер по Москве</th>
+              <td>1–2 дня</td>
+              <td>300 руб., от 3000 руб. — бесплатно</td>
+            </tr>
+            <tr>
+              <th scope="row">Самовывоз из пункта выдачи</th>
+              <td>1–3 дня</td>
+              <td>Бесплатно</td>
+            </tr>
+            <tr>
+              <th scope="row">Почта России</th>
+              <td>5–14 дней</td>
+              <td>от 350 руб.</td>
+            </tr>
+            <tr>
+              <th scope="row">Транспортная компания</th>
+              <td>3–7 дней</td>
+              <td>По тарифу перевозчика</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="payment">
+      <h2>Способы оплаты</h2>
+
+      <ul class="info-grid" role="list">
+        <li class="info-card">
+          <h3 class="info-card__title">Картой на сайте</h3>
+          <p class="info-card__text">Ссылку на оплату пришлём после того, как менеджер подтвердит заявку.</p>
+        </li>
+        <li class="info-card">
+          <h3 class="info-card__title">Через СБП</h3>
+          <p class="info-card__text">Оплата по QR-коду из приложения вашего банка.</p>
+        </li>
+        <li class="info-card">
+          <h3 class="info-card__title">При получении</h3>
+          <p class="info-card__text">Наличными или картой курьеру либо в пункте выдачи.</p>
+        </li>
+      </ul>
+    </section>
+
+    <aside class="aside-info">
+      <h2>Возврат и обмен</h2>
+      <p>
+        Вернуть или обменять товар можно в течение 14 дней после получения,
+        если он не был в использовании и сохранена упаковка. Подробности уточняйте
+        на странице <a href="contacts.html">«Контакты»</a>.
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+  <a class="to-top" href="#top">
+    <span class="to-top__icon" aria-hidden="true">↑</span>
+    <span class="to-top__text">Наверх</span>
+  </a>
+</body>
+</html>
